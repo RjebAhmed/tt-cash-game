@@ -1,0 +1,73 @@
+*,::before,::after{
+  box-sizing: border-box;
+  font-weight: normal;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, rgb(74, 62, 247),rgb(255, 190, 190) );
+}
+
+.container > button{
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, .2);
+  border: solid whitesmoke 1px;
+  height: 100%;
+width: 100%;
+  color: white;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+.control > button{
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: rgba(31, 29, 29, 0.3);
+  border: solid whitesmoke 1px;
+  height: 100%;
+width: 100%;
+  color: white;
+  font-size: 20px;
+
+}
+.control > button:hover{
+ 
+  background-color: rgba(31, 29, 29, 0.03);
+
+}
+.control > button:checked{
+  background-color: red;
+}
+ 
+
+
+.gridContainer{
+display: grid;
+grid-template-columns: 50% 50%;
+
+}
+.container{
+  border-right: rgba(70, 69, 69,0.5) solid 2.5px;
+padding: 0;
+  display: grid;
+margin-left: 40%;
+margin-top: 100px;
+  grid-template-columns:repeat(6,55px);
+  grid-template-rows:repeat(7,55px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.control{
+  margin-top: 200px;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns:repeat(3,100px);
+  grid-template-rows:repeat(4,55px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: fit-content;
+
+}
+button:focus{
+  outline: none;
+}
